@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ContactFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <TextView
+            android:id="@+id/contact_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:text="EMERGENCY CONTACTS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_26sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/police"
+                android:contentDescription="Police Icon"
+                android:layout_marginBottom="@dimen/_6sdp" />
+
+            <TextView
+                android:id="@+id/police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POLICE STATION"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/amaranth_bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="LCPS SUB-STATION 4"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/hotlines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="sans-serif"
+                android:text="0916-658-5199"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/brgy"
+                android:contentDescription="Fire Icon"
+                android:layout_marginBottom="@dimen/_6sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BARANGAY HALL"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/amaranth_bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Brgy. San Carlos Lipa"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="sans-serif"
+                android:text="09**-123-4**7"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/rounded_button"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/guard"
+                android:contentDescription="Hospital Icon"
+                android:layout_marginBottom="@dimen/_6sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECURITY GUARD"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/amaranth_bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Adelina Homes Lipa City"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="sans-serif"
+                android:text="0917-555-****"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

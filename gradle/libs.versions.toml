@@ -1,0 +1,17 @@
+[versions]
+agp = "8.0.0"
+kotlin = "1.9.23"
+composeCompiler = "1.5.14"
+firebaseBom = "33.3.0"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.13.1" }
+material = { group = "com.google.android.material", name = "material", version = "1.12.0" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version = "4.15.1" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version = "4.15.1" }
+cloudinary = { group = "com.cloudinary", name = "cloudinary-android", version = "3.0.2" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version = "4.4.1" }

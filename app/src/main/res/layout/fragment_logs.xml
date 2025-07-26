@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LogsFragment">
+
+    <!-- Title -->
+
+    <!-- Headers: Date/Time | Name | Type -->
+    <TextView
+        android:id="@+id/logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="sans-serif"
+        android:text="ACTIVITY LOGS"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_26sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/headerRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/logs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/headerDateTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date / Time"
+            android:textAlignment="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/_14sdp"
+            android:paddingVertical="4dp" />
+
+        <TextView
+            android:id="@+id/headerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textAlignment="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/_14sdp"
+            android:paddingVertical="4dp" />
+
+        <TextView
+            android:id="@+id/headerType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Type"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/_14sdp"
+            android:paddingVertical="4dp" />
+    </LinearLayout>
+
+    <!-- Logs RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/logsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="List of activity logs"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/headerRow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CamFragment">
+
+
+    <!-- CAN UPLOAD PHOTOS SUCCESSFULY SA PHONE NI MONAY EWAN BAT SA PHONE NI MAME AYAW -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD PHOTOS HERE:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_26sdp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_16sdp" />
+
+        <!-- Tenant Selection Spinner -->
+        <Spinner
+            android:id="@+id/tenantSpinner"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24sdp" />
+
+        <!-- Select Multiple Images Button -->
+        <Button
+            android:id="@+id/selectImagesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT IMAGES"
+            android:layout_marginBottom="@dimen/_16sdp" />
+
+        <!-- Proceed to Upload and View Button -->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_8sdp" />
+
+        <!-- Upload Progress -->
+        <ProgressBar
+            android:id="@+id/uploadProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_16sdp" />
+    </LinearLayout>
+</ScrollView>

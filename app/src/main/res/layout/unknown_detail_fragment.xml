@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_15sdp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="@dimen/_5sdp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal">
+
+        <!-- ImageView for unknown person's photo -->
+        <ImageView
+            android:id="@+id/unknownImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_placeholder" /> <!-- Placeholder image for loading -->
+
+        <!-- Timestamp text showing when the unknown person was detected -->
+        <TextView
+            android:id="@+id/timestampTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TIME DETECTED:"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

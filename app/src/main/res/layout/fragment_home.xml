@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageButton
+        android:id="@+id/notif"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_33sdp"
+        android:layout_marginStart="@dimen/_240sdp"
+        android:background="#00000000"
+        android:src="@drawable/baseline_circle_notifications_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="HOME                                                                  PAGE"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_105sdp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/register_tenant"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:text="REGISTER TENANT"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="TENANT'S PROFILE"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/unknown"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="UNKNOWN PERSONS"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_button" />
+
+        <!-- 🔓 UNLOCK GATE button added here -->
+        <Button
+            android:id="@+id/unlock_gate"
+            android:layout_width="177dp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="sans-serif-light"
+            android:text="UNLOCK GATE" />
+
+        <ImageButton
+            android:id="@+id/mic"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/circle_button_background"
+            android:contentDescription="Push to talk"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_mic" />
+    </LinearLayout>
+</FrameLayout>

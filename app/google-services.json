@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "714362231757",
+    "project_id": "veyrats-375fd",
+    "storage_bucket": "veyrats-375fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714362231757:android:bd57a2e43fa62bbf3c8284",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBH8pFw-Xpjml85BmABUQPcnqY_ojcRuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

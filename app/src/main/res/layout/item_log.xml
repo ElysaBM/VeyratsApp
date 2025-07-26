@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logItemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_16sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    android:background="@drawable/rounded_button"
+    android:elevation="@dimen/_2sdp"
+    android:clipToPadding="false">
+
+    <!-- Row: Date/Time | Name | Type -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/timestampTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="--"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="--"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="--"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>
